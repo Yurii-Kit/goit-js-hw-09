@@ -91,7 +91,7 @@ label {
   padding: 0;
   padding-left: 16px;
 }
-.feedback-form input,
+.feedback-form input:hover,
 .feedback-form textarea:hover {
   border: 1px solid #000;
 }
