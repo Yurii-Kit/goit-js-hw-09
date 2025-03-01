@@ -16,6 +16,22 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding-top: 20px;
+}
+
+button,
+label {
+  cursor: pointer;
+}
+
 .gallery {
   max-width: 1188px;
   margin: 0 auto;
@@ -46,4 +62,66 @@
 .gallery-image:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease;
+}
+
+/* Form */
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 360px;
+  padding: 24px;
+  margin: 0 auto;
+  border-radius: 8px;
+  background: #f7f8ff;
+}
+
+.feedback-form > label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font: inherit;
+  outline: none;
+  padding: 0;
+  padding-left: 16px;
+}
+.feedback-form input,
+.feedback-form textarea:hover {
+  border: 1px solid #000;
+}
+.feedback-form input {
+  height: 40px;
+}
+.feedback-form textarea {
+  height: 80px;
+}
+.feedback-form textarea {
+  resize: none;
+}
+.feedback-form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 95px;
+  height: 40px;
+  border: none;
+  background-color: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+.feedback-form button:hover {
+  background-color: #6c8cff;
 }
