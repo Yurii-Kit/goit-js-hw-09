@@ -1,6 +1,6 @@
-// Описаний в документації
+// Описаний в документації;
 import SimpleLightbox from 'simplelightbox';
-// Додатковий імпорт стилів
+// Додатковий імпорт стилів;
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const images = [
@@ -69,6 +69,7 @@ const images = [
     description: 'Lighthouse Coast Sea',
   },
 ];
+
 // 1 Присвоюємо змінній елемент;
 const container = document.querySelector('.js-gallery');
 
@@ -77,11 +78,11 @@ function createPictures(pictures) {
   return pictures
     .map(({ preview, original, description }) => {
       return `<li class="gallery-item js-gallery-item">
-         <a class="gallery-link" href=${original}>
-           <img class="gallery-image"
-          src=${preview}
-          alt=${description}/> </a> 
-              </li> `;
+    <a class="gallery-link" href=${original}>
+    <img class="gallery-image"
+    src=${preview}
+    alt=${description}/> </a> 
+    </li> `;
     })
     .join('');
 }
@@ -89,7 +90,7 @@ function createPictures(pictures) {
 // 3 Вставляємо картинки в галерею HTML;
 container.insertAdjacentHTML('beforeend', createPictures(images));
 
-// 4 Ініціалізуємо SimpleLightbox
+// 4 Ініціалізуємо SimpleLightbox;
 const simpleLightbox = new SimpleLightbox('.js-gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
